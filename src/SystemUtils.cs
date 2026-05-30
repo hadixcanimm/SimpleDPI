@@ -22,34 +22,46 @@ public static class SystemUtils
             }
             catch { }
 
+            // Clean up the old startup folder shortcut if it exists
             string startupFolderPath = Environment.GetFolderPath(Environment.SpecialFolder.Startup);
             string shortcutPath = System.IO.Path.Combine(startupFolderPath, AppName + ".lnk");
+            if (System.IO.File.Exists(shortcutPath))
+            {
+                try { System.IO.File.Delete(shortcutPath); } catch { }
+            }
 
             if (enable)
             {
                 string exePath = System.Diagnostics.Process.GetCurrentProcess().MainModule?.FileName ?? "";
                 
-                Type? t = Type.GetTypeFromProgID("WScript.Shell");
-                if (t != null)
-                {
-                    dynamic? shell = Activator.CreateInstance(t);
-                    if (shell != null)
-                    {
-                        var shortcut = shell.CreateShortcut(shortcutPath);
-                        shortcut.TargetPath = exePath;
-                        shortcut.Arguments = "--autostart";
-                        shortcut.WorkingDirectory = System.IO.Path.GetDirectoryName(exePath);
-                        shortcut.Save();
-                    }
-                }
+                // Create scheduled task (Runs with highest privileges /rl highest on user logon /sc onlogon)
+                string arguments = $"/create /tn \"{AppName}\" /tr \"\\\"{exePath}\\\" --autostart\" /sc onlogon /rl highest /f";
+                RunProcessHidden("schtasks.exe", arguments);
             }
             else
             {
-                if (System.IO.File.Exists(shortcutPath))
-                {
-                    System.IO.File.Delete(shortcutPath);
-                }
+                // Delete scheduled task
+                string arguments = $"/delete /tn \"{AppName}\" /f";
+                RunProcessHidden("schtasks.exe", arguments);
             }
+        }
+        catch { }
+    }
+
+    private static void RunProcessHidden(string fileName, string arguments)
+    {
+        try
+        {
+            var psi = new System.Diagnostics.ProcessStartInfo
+            {
+                FileName = fileName,
+                Arguments = arguments,
+                CreateNoWindow = true,
+                UseShellExecute = false,
+                WindowStyle = System.Diagnostics.ProcessWindowStyle.Hidden
+            };
+            using var process = System.Diagnostics.Process.Start(psi);
+            process?.WaitForExit(5000);
         }
         catch { }
     }

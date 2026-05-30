@@ -1,0 +1,17 @@
+C:\Users\pc\Desktop\SimpleDPI-main\src\bin\Release\net8.0-windows\win-x64\SimpleDPI.exe
+C:\Users\pc\Desktop\SimpleDPI-main\src\bin\Release\net8.0-windows\win-x64\SimpleDPI.deps.json
+C:\Users\pc\Desktop\SimpleDPI-main\src\bin\Release\net8.0-windows\win-x64\SimpleDPI.runtimeconfig.json
+C:\Users\pc\Desktop\SimpleDPI-main\src\bin\Release\net8.0-windows\win-x64\SimpleDPI.dll
+C:\Users\pc\Desktop\SimpleDPI-main\src\obj\Release\net8.0-windows\win-x64\MainWindow.baml
+C:\Users\pc\Desktop\SimpleDPI-main\src\obj\Release\net8.0-windows\win-x64\MainWindow.g.cs
+C:\Users\pc\Desktop\SimpleDPI-main\src\obj\Release\net8.0-windows\win-x64\App.g.cs
+C:\Users\pc\Desktop\SimpleDPI-main\src\obj\Release\net8.0-windows\win-x64\SimpleDPI_MarkupCompile.cache
+C:\Users\pc\Desktop\SimpleDPI-main\src\obj\Release\net8.0-windows\win-x64\SimpleDPI.g.resources
+C:\Users\pc\Desktop\SimpleDPI-main\src\obj\Release\net8.0-windows\win-x64\SimpleDPI.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\pc\Desktop\SimpleDPI-main\src\obj\Release\net8.0-windows\win-x64\SimpleDPI.AssemblyInfoInputs.cache
+C:\Users\pc\Desktop\SimpleDPI-main\src\obj\Release\net8.0-windows\win-x64\SimpleDPI.AssemblyInfo.cs
+C:\Users\pc\Desktop\SimpleDPI-main\src\obj\Release\net8.0-windows\win-x64\SimpleDPI.csproj.CoreCompileInputs.cache
+C:\Users\pc\Desktop\SimpleDPI-main\src\obj\Release\net8.0-windows\win-x64\SimpleDPI.dll
+C:\Users\pc\Desktop\SimpleDPI-main\src\obj\Release\net8.0-windows\win-x64\refint\SimpleDPI.dll
+C:\Users\pc\Desktop\SimpleDPI-main\src\obj\Release\net8.0-windows\win-x64\SimpleDPI.genruntimeconfig.cache
+C:\Users\pc\Desktop\SimpleDPI-main\src\obj\Release\net8.0-windows\win-x64\ref\SimpleDPI.dll

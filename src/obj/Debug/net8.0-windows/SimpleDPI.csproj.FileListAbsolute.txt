@@ -1,0 +1,17 @@
+C:\Users\pc\Desktop\SimpleDPI-main\src\bin\Debug\net8.0-windows\SimpleDPI.exe
+C:\Users\pc\Desktop\SimpleDPI-main\src\bin\Debug\net8.0-windows\SimpleDPI.deps.json
+C:\Users\pc\Desktop\SimpleDPI-main\src\bin\Debug\net8.0-windows\SimpleDPI.runtimeconfig.json
+C:\Users\pc\Desktop\SimpleDPI-main\src\bin\Debug\net8.0-windows\SimpleDPI.dll
+C:\Users\pc\Desktop\SimpleDPI-main\src\obj\Debug\net8.0-windows\MainWindow.baml
+C:\Users\pc\Desktop\SimpleDPI-main\src\obj\Debug\net8.0-windows\MainWindow.g.cs
+C:\Users\pc\Desktop\SimpleDPI-main\src\obj\Debug\net8.0-windows\App.g.cs
+C:\Users\pc\Desktop\SimpleDPI-main\src\obj\Debug\net8.0-windows\SimpleDPI_MarkupCompile.cache
+C:\Users\pc\Desktop\SimpleDPI-main\src\obj\Debug\net8.0-windows\SimpleDPI.g.resources
+C:\Users\pc\Desktop\SimpleDPI-main\src\obj\Debug\net8.0-windows\SimpleDPI.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\pc\Desktop\SimpleDPI-main\src\obj\Debug\net8.0-windows\SimpleDPI.AssemblyInfoInputs.cache
+C:\Users\pc\Desktop\SimpleDPI-main\src\obj\Debug\net8.0-windows\SimpleDPI.AssemblyInfo.cs
+C:\Users\pc\Desktop\SimpleDPI-main\src\obj\Debug\net8.0-windows\SimpleDPI.csproj.CoreCompileInputs.cache
+C:\Users\pc\Desktop\SimpleDPI-main\src\obj\Debug\net8.0-windows\SimpleDPI.dll
+C:\Users\pc\Desktop\SimpleDPI-main\src\obj\Debug\net8.0-windows\refint\SimpleDPI.dll
+C:\Users\pc\Desktop\SimpleDPI-main\src\obj\Debug\net8.0-windows\SimpleDPI.genruntimeconfig.cache
+C:\Users\pc\Desktop\SimpleDPI-main\src\obj\Debug\net8.0-windows\ref\SimpleDPI.dll

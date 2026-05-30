@@ -72,6 +72,17 @@ public partial class MainWindow : Window
     public MainWindow()
     {
         InitializeComponent();
+
+        // Handle --autostart early in the constructor to avoid flashing on screen
+        string[] args = Environment.GetCommandLineArgs();
+        if (args.Contains("--autostart"))
+        {
+            this.WindowState = WindowState.Minimized;
+            this.ShowInTaskbar = false;
+            this.Left = -10000;
+            this.Top = -10000;
+        }
+
         _processManager = new ProcessManager();
         _settings = AppSettings.Load();
         
@@ -169,8 +180,17 @@ public partial class MainWindow : Window
         if (args.Contains("--autostart"))
         {
             if (_settings.AutoStartService) _ = StartProcessAsync();
-            WindowState = WindowState.Minimized;
+            
+            // Hide the window completely so it collapses
             Hide();
+            
+            // Restore window defaults for when it is shown later via system tray
+            this.Left = (SystemParameters.PrimaryScreenWidth - 330) / 2;
+            this.Top = (SystemParameters.PrimaryScreenHeight - 400) / 2;
+            this.WindowState = WindowState.Normal;
+            this.ShowInTaskbar = true;
+            
+            if (_notifyIcon != null) _notifyIcon.Visible = true;
         }
     }
 

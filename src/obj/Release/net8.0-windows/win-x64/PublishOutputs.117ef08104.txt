@@ -1,0 +1,1 @@
+C:\Users\pc\Desktop\SimpleDPI-main\src\bin\Release\net8.0-windows\win-x64\publish\SimpleDPI.exe

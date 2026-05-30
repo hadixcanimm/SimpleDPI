@@ -13,6 +13,8 @@ public partial class App : System.Windows.Application
 
     protected override void OnStartup(StartupEventArgs e)
     {
+        System.IO.Directory.SetCurrentDirectory(System.AppDomain.CurrentDomain.BaseDirectory);
+
         base.OnStartup(e);
 
         string appName = System.Reflection.Assembly.GetExecutingAssembly().GetName().Name ?? "SimpleDPI";
